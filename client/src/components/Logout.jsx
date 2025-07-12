@@ -6,7 +6,7 @@ const Logout = ({ setRole }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:3001/auth/logout', { withCredentials: true })
+    axios.get('https://librarybookapi-1.onrender.com/auth/logout', { withCredentials: true })
       .then(res => {
         if (res.data.logout) {
           setRole('');
@@ -16,7 +16,7 @@ const Logout = ({ setRole }) => {
       .catch(err => console.log(err));
   }, [navigate, setRole]);
 
-  return null; // Or a loading spinner/message if you prefer
+  return null; 
 };
 
 export default Logout;
