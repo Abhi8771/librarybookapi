@@ -1,0 +1,35 @@
+.book-card {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-card {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.book-image {
+  height: 70%; /* More height to image */
+  object-fit: cover;
+  width: 100%;
+}
+
+.book-card .card-body {
+  height: 30%; /* Less height to content */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
