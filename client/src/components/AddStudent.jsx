@@ -20,7 +20,7 @@ export const AddStudent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post(
-      'http://localhost:3001/student/register',
+      'https://librarybookapi-1.onrender.com/student/register',
       { roll, username, password, grade },
       { withCredentials: true }
     )
